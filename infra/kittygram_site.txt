@@ -1,0 +1,5 @@
+IP: 158.160.74.55;
+name_taski: https://pomoyka.ddnsking.com/;
+name_kittygram: https://kittygramich.ddnsking.com/;
+login: admin;
+password: admin228;
