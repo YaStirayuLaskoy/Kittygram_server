@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 secret_token = os.getenv('SECRET_KEY')
-debug = os.getnenv('DEBUG', 'false').lower() == 'true'
+debug = os.getenv('DEBUG', 'false').lower() == 'true'
 ip = os.getenv('ALLOWED_HOSTS')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
