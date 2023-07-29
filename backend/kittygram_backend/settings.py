@@ -6,17 +6,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-secret_token = os.getenv('SECRET_KEY')
-debug = os.getenv('DEBUG', 'false').lower() == 'true'
-ip = os.getenv('ALLOWED_HOSTS')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = secret_token
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = debug
+DEBUG = os.getenv('DEBUG', 'false').lower() == 'true'
 
-ALLOWED_HOSTS = ip
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
