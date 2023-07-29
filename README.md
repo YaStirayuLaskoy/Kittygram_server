@@ -13,35 +13,48 @@ Kittygram - социальная сеть, созданная специальн
 Для доступа к проекту Kittygram, вам потребуется следующее:
 
 - Клонировать репозиторий
+
 '''
 git clone git@github.com:YaStirayuLaskoy/infra_sprint1.git
 '''
+
 - Установить зависимости для бэкэнд-приложения Django
+
 '''
 python3 -m venv venv
 '''
+
 '''
 source/bin/activate/
 '''
+
 '''
 pip install -r requirements.txt
+
 '''
 python3 manage.py migrate
 '''
+
 - Установить зависимости для фронтэнд-приложения React
+
 '''
 npm i
 '''
+
 '''
 npm run build
 '''
+
 - Перезапустите приколы
+
 '''
 sudo systemctl daemon-reload
 '''
+
 '''
 sudo systemctl reload nginx
 '''
+
 - Настроить файл .env в дериктории с setiings.py с необходимыми секретами. (смотреть env.template)
 
 ## Безопасность проекта Kittygram
